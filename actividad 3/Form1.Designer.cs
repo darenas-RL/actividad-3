@@ -64,7 +64,7 @@
             // 
             textnombre.Location = new Point(230, 43);
             textnombre.Name = "textnombre";
-            textnombre.Size = new Size(188, 23);
+            textnombre.Size = new Size(207, 23);
             textnombre.TabIndex = 1;
             // 
             // grupoact
@@ -178,6 +178,7 @@
             btnpresencial.TabStop = true;
             btnpresencial.Text = "PRESENCIAL";
             btnpresencial.UseVisualStyleBackColor = true;
+            btnpresencial.CheckedChanged += btnpresencial_CheckedChanged;
             // 
             // btnmostrar
             // 
@@ -199,10 +200,11 @@
             btnlimpiar.TabIndex = 5;
             btnlimpiar.Text = "Limpiar";
             btnlimpiar.UseVisualStyleBackColor = true;
+            btnlimpiar.Click += btnlimpiar_Click;
             // 
             // textresumen
             // 
-            textresumen.Location = new Point(79, 370);
+            textresumen.Location = new Point(44, 353);
             textresumen.Multiline = true;
             textresumen.Name = "textresumen";
             textresumen.ReadOnly = true;
@@ -214,7 +216,7 @@
             // 
             Resumen.AutoSize = true;
             Resumen.Font = new Font("Showcard Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Resumen.Location = new Point(79, 350);
+            Resumen.Location = new Point(59, 321);
             Resumen.Name = "Resumen";
             Resumen.Size = new Size(72, 17);
             Resumen.TabIndex = 7;
@@ -225,7 +227,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
-            ClientSize = new Size(629, 542);
+            ClientSize = new Size(616, 516);
             Controls.Add(Resumen);
             Controls.Add(textresumen);
             Controls.Add(btnlimpiar);
